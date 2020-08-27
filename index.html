@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="./polytonicGreek.ts"></script>
+    <link href="./styles.css" rel="stylesheet">
+    <title>This is a Poly Demo</title>
+</head>
+<body>
+    <h1>Polytonic Demo</h1>
+    <div class="input-container">
+        <input type="textarea" polytonic-greek="true" onfocus="inputFocus" placeholder="This is the first test text" /> 
+    </div>
+    <div class="input-container">
+        <input type="textarea" polytonic-greek="false" placeholder="This is the second test text" /></div>
+    <div class="input-container">
+        <input type="textarea" polytonic-greek=false placeholder="This is another test text" /></div>
+    <div class="input-container">
+        <input type="textarea" polytonic-greek="true" placeholder="This is a different test text" /> </div>
+
+    <p id='result'></p>
+</body>
+</html>

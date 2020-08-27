@@ -1,0 +1,25 @@
+
+p#result {
+    font-size: 32px;
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container::after {
+    content: 'Shift και ~, \`, \', ,';  
+    display: block;
+    position: absolute;
+    background-color: lightcyan;
+    font-size: 0.8em;
+    bottom: 110%;
+    border-radius: 5px;
+    width: max-content;
+    padding: 3px;
+    visibility: hidden;
+}
+
+.input-container:hover::after {
+    visibility: visible;
+}
