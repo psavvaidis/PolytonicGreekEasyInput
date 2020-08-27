@@ -1,4 +1,7 @@
 const keysToUTF = {
+    // Each Element's id is a prime
+    // In this case, multiplying their ids would 
+    // give us unique combinations
     '`': {id: 2, code: '\1FEF', name: 'varia'},
     '~': {id: 3, code: '\0342', name: 'perispomeni'},
     '\'': {id: 5, code: '\0301', name:'oksia'},
@@ -11,7 +14,7 @@ window.addEventListener('load', function(){
 
     // Searches for all inputs with 'polytonic-greek' attribute enabled
     var inputAreas = document.querySelectorAll('input[polytonic-greek="true"]')
-    // console.log(inputAreas)
+    
     for (const input of inputAreas) {
         
         input.addEventListener('focus', ev => {
@@ -23,12 +26,6 @@ window.addEventListener('load', function(){
             console.log(input.value)
         })
     }
-
-    let polyText = '\u1FCF'
-    document.getElementById('result').innerHTML = polyText
-
-    
-
 })
 
 
